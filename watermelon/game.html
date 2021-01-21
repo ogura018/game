@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		body {
+			background-color: aquamarine;
+		}
+
+		#suika,
+		#cut {
+			width: 20%;
+			position: relative;
+			top: 20px;
+			display: none;
+		}
+
+		#arrow {
+			width: 2%;
+			position: fixed;
+			bottom: 2px;
+			left: 50%;
+			display: none;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		button {
+			position: relative;
+			left: 50%;
+			bottom: 20px;
+		}
+
+
+
+		#text {
+			display: none;
+			position: relative;
+			top: 10px;
+		}
+	</style>
+	</head>
+
+	<body>
+		<h1 id="title">すいか割り</h1>
+		<button id="start" type="submit">スタート</button>
+		<img src="suika.png" alt="" id="suika">
+		<img src="./suika_cut.png" alt="" id="cut">
+		<img src="./arrow.svg" alt="" id="arrow">
+		<p id="text">clear</p>
+
+		<script>
+			document.addEventListener('click', function(){
+				document.getElementById('suika').style.display = "block";
+				document.getElementById('arrow').style.display = "block";
+				document.getElementById('title').style.display = "none";
+				document.getElementById('btn').style.display = "none";
+			});
+
+			let _arrow = document.getElementById('arrow');
+
+			for(let i = 0; i <= 500; i++){
+				_arrow.style.bottom = i;
+			}
+
+
+
+		</script>
+</body>
+</html>

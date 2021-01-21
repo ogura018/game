@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>collision_test</title>
+	<style>
+		#a{
+			position: fixed;
+			bottom: 20px;
+			left: 50px;
+		}
+	</style>
+	<!-- Someone... please help me! Hey there! You're! Help me now, please!! I'm hold here since 3 weeks ago. -->
+</head>
+<body>
+<h1 id="a">test message</h1>
+<script>
+	let a_text = document.getElementById('a');
+
+
+	a = document.addEventListener('click', function(){
+
+
+	let _a = 1;
+	let timer = setInterval(countUp, 6);
+
+	function countUp() {
+		for (let i = 0; i < 1; i++) {ccccccccccccccccccc
+			a_text.style.bottom = i + "px"
+			console.log(_a++);
+			if (_a == 51) {
+				clearInterval(timer);
+			}
+		}
+	}
+	})
+</script>
+</body>
+</html>
